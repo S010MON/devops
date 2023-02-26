@@ -17,7 +17,7 @@ and  press enter to skip the passphrase
 ```
 
 ## 2. Inspect Keys
-The **PRIVATE** key will be in a file named 'id_ed25519' (if you picked the default) without a file ending and will look something like this:
+The **PRIVATE** key will be in a file named `id_ed25519` (if you picked the default) without a file ending and will look something like this:
 ```
 -----BEGIN OPENSSH PRIVATE KEY-----
 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
@@ -28,7 +28,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-The **PUBLIC** key will be in a file named 'id_ed25519.pub' (if you picked the default) with a `.pub` file ending and will look something like this:
+The **PUBLIC** key will be in a file named `id_ed25519.pub` (if you picked the default) with a `.pub` file ending and will look something like this:
 ```
 ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX your_email@example.com
 ```
