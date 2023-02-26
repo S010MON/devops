@@ -60,7 +60,10 @@ jobs:
             # uses: fifsky/ssh-action@58b3c484be9c20cf118fd3b939a6d2cb3c769512
         uses: fifsky/ssh-action@v0.0.6
         with:
-            command: cd /root/ && ls -a          # ADD COMMANDS HERE
+            command: |
+                    cd /root/ 
+                    ls -a          
+                    # ADD MORE COMMANDS HERE OR REPLACE ABOVE
             host: ${{ secrets.DEPLOY_SSH_HOST }}
             user: ${{ secrets.DEPLOY_SSH_USER }}
             key:  ${{ secrets.DEPLOY_SSH_KEY }}
