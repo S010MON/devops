@@ -27,7 +27,7 @@ XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 -----END OPENSSH PRIVATE KEY-----
 ```
 
-The **PUBLIC** key will be in a file named 'id_ed25519' (if you picked the default) with a `.pub` file ending and will look something like this:
+The **PUBLIC** key will be in a file named 'id_ed25519.pub' (if you picked the default) with a `.pub` file ending and will look something like this:
 ```
 ssh-ed25519 XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX your_email@example.com
 ```
