@@ -1,7 +1,8 @@
 # Remote Deploy with SSH
+To deploy your code automatically when pushing to the master/main/prod branch, we need to set up a server with SSH access, enable pulling code via SSH and a github action script (as a `.yml` file) that wil run every time a PR is merged.
 
 ## 1.  Generate Keys
-On your own machine (not the server) run the following (for full explanation see [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent):
+On your own machine (not the server) run the following (for full explanation see the github docs [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#adding-your-ssh-key-to-the-ssh-agent):
 ```
 ssh-keygen -t ed25519 -C "your_email@example.com"
 ```
