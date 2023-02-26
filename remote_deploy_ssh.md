@@ -68,4 +68,4 @@ jobs:
             user: ${{ secrets.DEPLOY_SSH_USER }}
             key:  ${{ secrets.DEPLOY_SSH_KEY }}
 ```
-Note you will need to add your own commands to deploy your code.
+Note you will need to add your own commands to deploy your code, if you are pulling from github you will also need to set up SSH deploy keys to be able to pull code from github without entering a password (guide availabe [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys).
