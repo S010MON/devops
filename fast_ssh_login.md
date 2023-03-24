@@ -1,3 +1,13 @@
+# SSH Access
+To set up SSH access to a server, we either need physical access to the machine, or (in the case of could providers) a password to login.  We will need to follow several steps to set up SSH keys:
+
+1.  Create a key pair
+2.  Add our public key to the server's `/.ssh/authorised_keys` file
+3.  Save our private key to our local machine's SSH agent using `ssh-add` 
+
+[This](https://www.freecodecamp.org/news/the-ultimate-guide-to-ssh-setting-up-ssh-keys/) is a pretty comprehensive guide on how to do all of these things, but (once we've got a pair of keys generated) really we want to be able to log in via ssh without finding our password every time.
+
+
 # Deploying An SSH Key The Fast Way
 
 There is a command called ssh-copy-id. It basically does all the deploy steps automatically. 
