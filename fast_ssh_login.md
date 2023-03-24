@@ -11,13 +11,14 @@ To set up SSH access to a server, we either need physical access to the machine,
 # Deploying An SSH Key The Fast Way
 
 There is a command called ssh-copy-id. It basically does all the deploy steps automatically. 
-You still need to generate the SSH key using `ssh-keygen -t ed25519 -C "your@email.com"`
-
+You still need to generate the SSH key using `ssh-keygen -t ed25519 -C "your@email.com"` but then we can log in to the remote machine using:
+```
 ssh-copy-id <user>@<ip address>
-
+```
 Be sure to replace <user> with the remote username and <ip address> with the IP address of the remote host.
 
-Check it out in action below.
+<br/>
+Check it out in action below:
 
 ```
 pi@local_pi:~ $ ssh-copy-id pi@192.168.1.157
